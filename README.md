@@ -2,6 +2,9 @@
 참고 영상 : [한시간만에 Node.js 백엔드 기초 끝내기 (ft. API 구축)](https://youtu.be/Tt_tKhhhJqY)
 
 
+#### -API 통신 테스트
+https://hyohyoj.github.io/node-api-example/
+
 
 ## Deploy
 [cloudtype](https://cloudtype.io/)을 이용하여 API 서버 배포
