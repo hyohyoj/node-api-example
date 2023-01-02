@@ -31,6 +31,8 @@ app.get('/sound/:name', (req, res) => {
         res.send({'sound' : '야옹'});
     } else if (name == 'pig') {
         res.send({'sound' : '꿀꿀'});
+    } else if (name == 'yeonji') {
+        res.send({'sound' : '우아해 ~ 🥰'});
     } else {
         res.send({'sound' : '알수없음'});
     }
