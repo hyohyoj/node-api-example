@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API 요청 테스트</title>
+</head>
+<body>
+    <h1 id="sound"></h1>
+    <input type="text" id="name">
+    <button onclick="getSound()">API 요청</button>
+    <script>
+        const input = document.getElementById('name');
+        
+        input.addEventListener('keyup', function(e) {
+            // 입력 후 엔터 누를 시 요청
+            if(e.keyCode === 13) {
+                e.preventDefault();
+                getSound();
+            }
+        });
+
+        function getSound() {
+            const name = input.value;
+
+            fetch(`https://port-0-node-api-example-9z2ygb26lcemsprm.gksl2.cloudtype.app/sound/${name}`)
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data.sound);
+                document.getElementById('sound').innerHTML = data.sound;
+            });
+        }
+    </script>
+</body>
+</html>
