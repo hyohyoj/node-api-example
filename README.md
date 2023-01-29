@@ -23,3 +23,11 @@ npm ci --production
 node index.js
 ```
 
+
+## History
+### 2023-01-29  
+mariaDB 연동 및 sound_log 테이블 구현
+
+![image](https://user-images.githubusercontent.com/39309559/215313065-945b915a-185c-48fc-bbfe-85ad4714d285.png)
+
+
